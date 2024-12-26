@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #244184;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo span {
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.left-content {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.clipboard-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.right-content {
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+.right-content h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.right-content p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #ff6b6b;
+}
+
+.start-btn {
+    background-color: #ff9f9f;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.start-btn:hover {
+    background-color: #ff8080;
+}
+
+/* Responsive Breakpoints */
+@media screen and (min-width: 768px) {
+    /* Tablet */
+    .content {
+        padding: 0 40px;
+    }
+
+    .left-content {
+        max-width: 400px;
+    }
+
+    .clipboard-img {
+        max-width: 400px;
+    }
+
+    .right-content h1 {
+        font-size: 1.8em;
+    }
+
+    .right-content p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Laptop */
+    .content {
+        flex-direction: row;
+        text-align: left;
+        gap: 50px;
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+
+    .left-content {
+        flex: 1;
+        max-width: none;
+    }
+
+    .clipboard-img {
+        max-width: 400px;
+    }
+
+    .right-content {
+        flex: 1;
+        max-width: none;
+    }
+
+    .right-content h1 {
+        font-size: 2em;
+    }
+
+    .right-content p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile */
+    .container {
+        padding: 10px;
+    }
+
+    .logo span {
+        font-size: 0.9em;
+    }
+
+    .content {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .right-content h1 {
+        font-size: 1.3em;
+    }
+
+    .right-content p {
+        font-size: 0.9em;
+    }
+
+    .start-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
